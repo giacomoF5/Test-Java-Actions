@@ -15,6 +15,11 @@ public class CarTest {
     }
 
     @Test
+    void testCarHas2Attributes() {
+        assertEquals(2, car.getClass().getDeclaredFields().length);
+    }
+
+    @Test
     void testGetBrand() {
         assertEquals("Ferrari", car.getBrand());
     }
